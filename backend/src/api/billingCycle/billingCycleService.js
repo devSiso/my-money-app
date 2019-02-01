@@ -5,8 +5,6 @@ BillingCycle.methods(['get', 'post', 'put', 'delete']);
 BillingCycle.updateOptions({ new: true, runValidators: true });
 BillingCycle.after('post', errorHandler).after('put', errorHandler);
 
-
-
 //counting objects
 BillingCycle.route('count', (req, res, next) => {
     BillingCycle.count((error, value) => {
@@ -21,7 +19,7 @@ BillingCycle.route('count', (req, res, next) => {
         }
     });
 });
-
+ 
 //returning a summary
 BillingCycle.route('summary', (req, res, next) => {
     BillingCycle.aggregate({
