@@ -11,7 +11,7 @@ import Row from '../common/layout/row'
 class Dashboard extends Component {
 
     componentWillMount() {
-        console.log(this.props.getSummary())
+        this.props.getSummary();
     }
 
     render () {
