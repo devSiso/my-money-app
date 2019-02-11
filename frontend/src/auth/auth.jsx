@@ -1,3 +1,5 @@
+/* eslint-disable no-script-url */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import './auth.css'
 import React, { Component } from 'react'
 import { reduxForm, Field } from 'redux-form'
@@ -52,7 +54,7 @@ class Auth extends Component {
                         </Row>
                     </form>
                     <br />
-                    <a onClick={() => this.changeMode()}>
+                    <a href="javascript:;" onClick={() => this.changeMode()}>
                         {loginMode ? 'Novo usuário? Registrar aqui!' :
                             'Já é cadastrado? Entrar aqui!'}
                     </a>

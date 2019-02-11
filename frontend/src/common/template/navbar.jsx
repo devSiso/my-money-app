@@ -1,3 +1,5 @@
+/* eslint-disable no-script-url */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
@@ -26,13 +28,13 @@ class Navbar extends Component {
                             className="dropdown-toggle"
                             data-toggle="dropdown">
                             <img src="http://lorempixel.com/160/160/abstract"
-                                className="user-image" alt="User Image" />
+                                className="user-image" alt="User" />
                             <span className="hidden-xs">{name}</span>
                         </a>
                         <ul className="dropdown-menu">
                             <li className="user-header">
                                 <img src="http://lorempixel.com/160/160/abstract"
-                                    className="img-circle" alt="User Image" />
+                                    className="img-circle" alt="User" />
                                 <p>{name}<small>{email}</small></p>
                             </li>
                             <li className="user-footer">
